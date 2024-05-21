@@ -1,0 +1,108 @@
+/*
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+
+  Elements will respond to adjustment in their most immedicate container 
+  (most specific reference to element)
+ */
+
+html {
+  /* viewport width and height respecitively
+    is the width and height of the viewable screen */
+  
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-size: 30%;
+}
+
+body {
+  background-color: #FFF4D8;
+  font-family: 'Montserrat' ;
+  /* height: 100vh; */
+  /* width: 100vw; */
+  margin: 0;       /*may take this out*/
+
+}
+
+.wrap {
+  height: 100vh;
+  width: 100vw;
+
+  /* max-width: 1200px; */
+  /* margin: 2em; */
+  /* align-items: center; */
+  /* justify-content: center; */
+} 
+
+header {
+  align-items: center;
+}
+
+main {
+  /* display: flex; */
+  justify-content: space-between;
+
+}
+
+.lower_container {
+  display: flex;
+  justify-content: space-between;
+  margin: 2em;
+}
+
+/* hashtag sign is to reference id attributes */
+#map {
+  height: 70%;      /* 70% of immediate container ie wrap in this case */
+  width: 70%;
+  /* auto margin puts map in center */
+  margin: auto;   
+}
+
+/* h2 {
+  font-size: 5.2rem;
+  color: #EF476F;
+  text-align: center;
+  height: fit-content;
+  margin-bottom: 0;
+} */
+
+h3 {
+  font-size: 3rem;
+  color: #EF476F;
+  text-align: center;
+  height: fit-content;
+  margin-bottom: 0;
+}
+
+.blurb {
+  margin-bottom: 1rem;
+}
+
+.subhead {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+img {
+  width: 15%;
+  height: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* Media query for larger screens aka desktop or lapptop */
+@media (min-width: 600px) {
+  img {
+    width: 8%; 
+    height: 10%;
+  }
+}
+
+
+
